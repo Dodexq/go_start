@@ -29,7 +29,7 @@ func main() {
 	length, width = 5.2, 2.4
 	fmt.Println(length, width)
 
-	fmt.Println()
+	fmt.Println() // :=
 	var quantity2 int = 4
 	var length2, width2 float64 = 6.1, 4.0
 	var str2 string = "Go, Hello!"
