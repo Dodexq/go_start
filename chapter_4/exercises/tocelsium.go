@@ -24,12 +24,16 @@ func getFloat() (float64, error) {
 	return number, nil
 }
 
+func celsium(fahrenheit float64) float64 {
+	return (fahrenheit - 32) * 5 / 9
+}
+
 func main() {
 	fmt.Print("Enter a temperature in Fahrenheit: ")
 	fahrenheit, err := getFloat()
 	if err != nil {
 		log.Fatal(err)
 	}
-	celsium := (fahrenheit - 32) * 5 / 9
+	celsium := celsium(fahrenheit)
 	fmt.Printf("%0.2f degrees Celsium\n", celsium)
 }
