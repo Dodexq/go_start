@@ -1,10 +1,18 @@
 // avarage вычесляет среднее значение
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+
+	"github.com/dodexq/datafile"
+)
 
 func main() {
-	var numbers = [3]float64{71.2, 52.6, 84.2}
+	numbers, err := datafile.GetFloats("data.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
 	var sum float64 = 0
 	for _, number := range numbers {
 		sum += number
