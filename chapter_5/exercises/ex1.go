@@ -44,5 +44,26 @@ func main() {
 	fmt.Println(primes1[4])
 	fmt.Println()
 	//
+	var notes3 [3]string = [3]string{"one", "two", "three"}
+	var primes3 [5]int = [5]int{2, 3, 19, 52, 64}
+	fmt.Println(notes3)
+	fmt.Println(primes3)
+
+	fmt.Printf("%#v\n", notes3)
+	fmt.Printf("%#v\n", primes3)
+	fmt.Println()
+	//
+	notes = [7]string{"do", "re", "mi", "fa", "so", "la", "ti"}
+	for i := 0; i <= 2; i++ {
+		fmt.Println(i, notes[i])
+	}
+	fmt.Println()
+	//
+	fmt.Println(len(notes), "- massive len")
+	for i := 0; i < len(notes); i++ {
+		fmt.Println(i, notes[i])
+	}
+	fmt.Println()
+	//
 
 }
