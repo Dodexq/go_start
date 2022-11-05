@@ -10,6 +10,10 @@ func severalStrings(strings ...string) {
 	fmt.Println(strings)
 }
 
+func mix(num int, flag bool, strings ...string) {
+	fmt.Println(num, flag, strings)
+}
+
 func main() {
 	severalInts(1)
 	severalInts(1, 2, 3)
@@ -18,4 +22,8 @@ func main() {
 	severalStrings("a", "b")
 	severalStrings("a", "b", "c", "d", "e")
 	severalStrings()
+	fmt.Println()
+	//
+	mix(1, true, "a", "b")
+	mix(2, false, "a", "b", "c", "d")
 }
