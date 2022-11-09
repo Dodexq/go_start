@@ -1,3 +1,4 @@
+// Пакет datafile предназначен для чтения данных из файлов.
 package datafile
 
 import (
@@ -5,6 +6,7 @@ import (
 	"os"
 )
 
+// GetStrings возвращает сегмет string из каждой строки файла.
 func GetStrings(fileName string) ([]string, error) {
 	var lines []string
 	file, err := os.Open(fileName)

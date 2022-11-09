@@ -42,4 +42,11 @@ func main() {
 	}
 	fmt.Println(elements2["H"])
 	fmt.Println(elements2["Li"])
+	fmt.Println()
+	//
+	counters := make(map[string]int)
+	counters["a"]++
+	counters["a"]++
+	counters["c"]++
+	fmt.Println(counters["a"], counters["b"], counters["c"])
 }

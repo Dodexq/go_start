@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-// GetFloats читает значение float64 из каждой строки файла. ошибку.
+// GetFloats возвращает сегмет float64 из каждой строки файла.
 func GetFloats(fileName string) ([]float64, error) {
 	var numbers []float64
 	file, err := os.Open(fileName)
